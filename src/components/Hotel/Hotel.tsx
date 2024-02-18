@@ -24,10 +24,9 @@ const EntityComponent = () => {
       <h2>Entities</h2>
       <button onClick={addEntity}>Add Entity</button>
       <ul>
-        {/* Отображение списка сущностей */}
         {entities.map(entity => (
           <li key={entity.id}  className={s.task}>
-            <strong>{entity.name}</strong>: {entity.description}
+            <p>{entity.name}</p>: {entity.description}
           </li>
         ))}
       </ul>
